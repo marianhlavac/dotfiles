@@ -1,0 +1,18 @@
+{
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.dragAndDrop": false,
+    "editor.rulers": [ 80, 120 ],
+    "editor.smoothScrolling": true,
+    "workbench.startupEditor": "none",
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "last",
+    "workbench.editor.openPositioning": "last",
+    "explorer.openEditors.visible": 0,
+    "files.autoSave": "onWindowChange",
+    "workbench.colorTheme": "Atom One Dark",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "typescript.updateImportsOnFileMove.enabled": "always"
+}
