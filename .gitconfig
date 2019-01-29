@@ -1,0 +1,5 @@
+[user]
+	email = hlavac95@gmail.com
+	name = Marián Hlaváč
+[core]
+	excludesfile = /Users/majko/.gitignore
