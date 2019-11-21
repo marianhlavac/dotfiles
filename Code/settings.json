@@ -10,9 +10,19 @@
     "workbench.editor.openPositioning": "last",
     "explorer.openEditors.visible": 0,
     "files.autoSave": "onWindowChange",
-    "workbench.colorTheme": "Atom One Dark",
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
     "git.confirmSync": false,
-    "typescript.updateImportsOnFileMove.enabled": "always"
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.enableSmartCommit": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "explorer.confirmDelete": false,
+    "files.autoSaveDelay": 10000,
+    "workbench.colorTheme": "Horizon"
 }
