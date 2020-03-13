@@ -15,14 +15,12 @@
     "git.confirmSync": false,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "git.enableSmartCommit": true,
-    "eslint.alwaysShowStatus": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
     "explorer.confirmDelete": false,
     "files.autoSaveDelay": 10000,
-    "workbench.colorTheme": "Horizon"
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "workbench.iconTheme": "ayu",
+    "git.autofetch": true,
+    "extensions.ignoreRecommendations": true,
+    "csharp.referencesCodeLens.enabled": false,
+    "terminal.integrated.rendererType": "dom"
 }

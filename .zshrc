@@ -1,14 +1,17 @@
 # Env settings
-export ZSH="/Users/majko/.oh-my-zsh"
 HIST_STAMPS="yyyy-mm-dd"
 
-# Load Oh My Zsh and Zsh plugins
-source $ZSH/oh-my-zsh.sh
-source ~/.zsh_plugins.sh
+# Completions
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' special-dirs true
+autoload -Uz compinit && compinit
 
-# Aliases
-alias update_plugins="antibody bundle < ~/.zsh_plugins_list > ~/.zsh_plugins.sh"
-alias dcup="docker-compose up -d"
+# Load plugins and aliases
+source ~/.zsh/zsh_plugins.zsh
+source ~/.zsh/zsh_aliases.zsh
+
+# THEFUUUCK
+eval $(thefuck --alias)
 
 # PATH
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/sbin:$HOME"
