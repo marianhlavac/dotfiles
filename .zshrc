@@ -14,4 +14,4 @@ source ~/.zsh/zsh_aliases.zsh
 eval $(thefuck --alias)
 
 # PATH
-export PATH="/usr/local/sbin:$HOME"
+export PATH="/usr/local/sbin:$HOME:$PATH"
