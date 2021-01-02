@@ -1,47 +1,4 @@
-# Latest
-alias update_plugins="antibody bundle < ~/.zsh/zsh_plugins_list > ~/.zsh/zsh_plugins.zsh"
-alias dcup="docker-compose up -d"
-alias doo="sudo du -hH -d 1 2> /dev/null | sort -r -h"
-
-# Changing/making/removing directory
-setopt autocd
-setopt autopushd
-setopt pushdignoredups
-setopt pushdminus
-
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
-alias -g ......='../../../../..'
-
-alias -- -='cd -'
-alias 1='cd -'
-alias 2='cd -2'
-alias 3='cd -3'
-
-alias md='mkdir -p'
-alias rd=rmdir
-
-function d () {
-  if [[ -n $1 ]]; then
-    dirs "$@"
-  else
-    dirs -v | head -10
-  fi
-}
-
-
-# List directory contents
-alias lsa='ls -lah'
-alias l='exa -lga --group-directories-first --git'
-alias ld='l -T -L2'
-alias ldd='l -T -L3'
-
-## jobs
-setopt long_list_jobs
-
-## super user alias
-alias _='sudo '
+# Took from oh-my-zsh
 
 #
 # Functions
@@ -464,13 +421,7 @@ alias gsr='git svn rebase'
 alias gss='git status -s'
 alias gst='git status'
 
-# use the default stash push on git 2.13 and newer
-autoload -Uz is-at-least
-is-at-least 2.13 "$(git --version 2>/dev/null | awk '{print $3}')" \
-  && alias gsta='git stash push' \
-  || alias gsta='git stash save'
-
-alias gstaa='git stash apply'
+alias gsta='git stash apply'
 alias gstc='git stash clear'
 alias gstd='git stash drop'
 alias gstl='git stash list'
