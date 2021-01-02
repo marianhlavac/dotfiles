@@ -42,14 +42,8 @@ alias md='mkdir -p'
 
 # PATH
 export PATH="/usr/local/sbin:$HOME/.flutter/bin:$PATH"
-
-if [ -f '/usr/local/etc/google-cloud-sdk/path.zsh.inc' ]
-    then . '/usr/local/etc/google-cloud-sdk/path.zsh.inc'
-fi
-
-if [ -f '/usr/local/etc/google-cloud-sdk/completion.zsh.inc' ]
-    then . '/usr/local/etc/google-cloud-sdk/completion.zsh.inc'
-fi
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 # Others
 source ~/.zsh/temp_vars.zsh
